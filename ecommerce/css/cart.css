@@ -1,0 +1,90 @@
+
+@font-face {
+  font-family: 'Haksen';
+  src: url('../assets/fonts/HAKSEN.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: rgb(243, 219, 135);
+  font-family: 'Haksen',sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: beige;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  margin: 10px;
+  padding: 0 10px;
+}
+
+.logo {
+  font-family: 'Haksen', sans-serif;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.cart-title {
+  font-size: 26px;
+  margin: 20px;
+  font-family: 'Haksen', sans-serif;
+}
+
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+.cart-card {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cart-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.cart-details h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.cart-details p {
+  margin: 5px 0 0;
+  font-weight: bold;
+}
+
+.empty {
+  font-size: 20px;
+  padding: 50px;
+  text-align: center;
+}
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Haksen';
+  src: url('../assets/fonts/HAKSEN.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(243, 219, 135);
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.logo {
+  font-family: 'Haksen', sans-serif;
+  font-size: 23px;
+  font-weight: bolder;
+  padding: 15px;
+}
+
+.navbar {
+  background-color: beige;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  margin: 10px;
+  padding: 0 10px;
+}
+
+.cart button {
+  padding: 5px;
+  margin-right: 10px;
+  border: 0;
+  display: flex;
+  background-color: beige;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background-color: #e0c44f;
+  color: white;
+}
+
+.items {
+  font-family: 'Haksen', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 13px;
+}
+
+.product-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: beige;
+  margin: 10px;
+  padding: 10px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.product {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  padding: 10px;
+  background-color: beige;
+}
+
+.product::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.pro {
+  min-width: 200px;
+  height: 300px;
+  background-color: beige;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  margin-left: 85px;
+}
+
+.pro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pro-inner {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.pro-inner img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.pro-details {
+  text-align: center;
+}
+
+.pro-details h4 {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #222;
+}
+
+.pro-details p {
+  font-size: 14px;
+  color: #555;
+  margin: 3px 0;
+}
+
+.add-btn {
+  background-color: #f3c237;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #e0a800;
+}
