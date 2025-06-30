@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Haksen';
+  src: url('../assets/fonts/HAKSEN.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+    background:url(../assets/images/pexels-pixabay-531880.jpg)  ;
+}
+.navlog{
+    /*background: rgba(255, 255, 255, 0.1); /* transparent white */
+    /*backdrop-filter: blur(10px); /* frosted glass blur */
+    width: auto;
+    display: flex;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+.logo{
+    font-family: 'Haksen',sans-serif;
+    font-weight: bolder;
+    color: ghostwhite;
+    font-size: 30px;
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(20,109,120,0.3); /* transparent white */
+    backdrop-filter: blur(20px); /* frosted glass blur */
+    width: 400px;
+    height: 250px;
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    justify-content: center; 
+}
+
+.input {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center; 
+}
+
+.input input {
+    width: 100%;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(19, 19, 19);
+    font-size: 16px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.input input::placeholder {
+    color: rgba(22, 22, 22, 0.75);
+    font-family: 'Haksen' ,sans-serif;
+}
+
+.input input:focus {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.inputbutton {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.inputbutton button {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    color: rgb(21, 21, 21);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.3s, transform 0.2s;
+    font-family: 'Haksen' ,sans-serif;
+  
+    
+}
+
+.inputbutton button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.03);
+}
